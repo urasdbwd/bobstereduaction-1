@@ -1,21 +1,4 @@
-/*
-  _____                   _                _     _                                                                      
- |  __ \                 | |              | |   | |                                                                     
- | |__) |   ___    _ __  | |_    ___    __| |   | |__    _   _                                                          
- |  ___/   / _ \  | '__| | __|  / _ \  / _` |   | '_ \  | | | |                                                         
- | |      | (_) | | |    | |_  |  __/ | (_| |   | |_) | | |_| |                                                         
- |_|       \___/  |_|     \__|  \___|  \__,_|   |_.__/   \__, |                                                         
-                                                          __/ |                                                         
-                                                         |___/                                                          
-                                _     _                     _       _   _          _                               _    
-     /\                        | |   | |                   | |     | \ | |        | |                             | |   
-    /  \     _ __ ___     ___  | |_  | |__    _   _   ___  | |_    |  \| |   ___  | |_  __      __   ___    _ __  | | __
-   / /\ \   | '_ ` _ \   / _ \ | __| | '_ \  | | | | / __| | __|   | . ` |  / _ \ | __| \ \ /\ / /  / _ \  | '__| | |/ /
-  / ____ \  | | | | | | |  __/ | |_  | | | | | |_| | \__ \ | |_    | |\  | |  __/ | |_   \ V  V /  | (_) | | |    |   < 
- /_/    \_\ |_| |_| |_|  \___|  \__| |_| |_|  \__, | |___/  \__|   |_| \_|  \___|  \__|   \_/\_/    \___/  |_|    |_|\_\
-                                               __/ |                                                                    
-                                              |___/                                                                     
-*/
+
 import { App } from './app.js'
 import { gs } from './gs.js';
 import { apps } from './apps.js';
@@ -54,10 +37,10 @@ app.destroyParticles = function() {
 document.querySelector('#open-nav').addEventListener('click', app.openNav);
 document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 
-document.title = localStorage.getItem('incog||title') || 'Incognito';
+document.title = localStorage.getItem('incog||title') || 'Google';
 window.icon = document.querySelector('#favicon');
 
-icon.href = localStorage.getItem('incog||icon') || './index.svg';
+icon.href = localStorage.getItem('incog||icon') || 'https://google.com/favicon.ico';
 
 app.on('init', () => {
     app.icon = document.querySelector('#favicon');
