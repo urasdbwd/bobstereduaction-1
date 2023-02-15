@@ -1,4 +1,4 @@
-let unlockedCookie = getCookie("unlocked");
+let unlockedCookie = getCookie("bald");
     if (unlockedCookie !== "true") {
       let elements = document.getElementsByTagName("*");
       for (let i = 0; i < elements.length; i++) {
